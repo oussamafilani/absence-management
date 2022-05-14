@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app 
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+
+    
+<!-- Declaration MyServlet *************************************************************************** -->  
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>Servlet.MyServlet</servlet-class>
+    </servlet>
+<!-- ***************************************************************************-->  
+
+
+
+<!-- Declaration Logout ***************************************************************************-->          
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Servlet.Logout</servlet-class>
+    </servlet>
+<!-- ***************************************************************************-->    
+
+
+<!-- Declaration Logout ***************************************************************************--> 
+    <servlet>
+        <servlet-name>modifierModule</servlet-name>
+        <servlet-class>Servlet.modifierModule</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>supprimerModule</servlet-name>
+        <servlet-class>Servlet.supprimerModule</servlet-class>
+    </servlet>
+<!-- Declaration Logout ***************************************************************************--> 
+
+
+<!-- Declaration enseignant ***************************************************************************-->          
+    <servlet>
+        <servlet-name>enseignant</servlet-name>
+        <servlet-class>Servlet.enseignant</servlet-class>
+    </servlet>
+<!-- ***************************************************************************-->  
+
+
+<!-- Declaration etudiant ***************************************************************************-->          
+    <servlet>
+        <servlet-name>etudiant</servlet-name>
+        <servlet-class>Servlet.etudiant</servlet-class>
+    </servlet>
+<!-- ***************************************************************************-->  
+
+
+
+<!-- Declaration AffecterAbs ***************************************************************************-->          
+    <servlet>
+        <servlet-name>AffecterAbs</servlet-name>
+        <servlet-class>Servlet.AffecterAbs</servlet-class>
+    </servlet>
+<!-- ***************************************************************************--> 
+
+<!-- Declaration ModifierAdmin/SupprimerAdmin/AdmineChangeRole **********************************************-->      
+    <servlet>
+        <servlet-name>ModifierAdmin</servlet-name>
+        <servlet-class>Servlet.ModifierAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SupprimerAdmin</servlet-name>
+        <servlet-class>Servlet.SupprimerAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdmineChangeRole</servlet-name>
+        <servlet-class>Servlet.AdmineChangeRole</servlet-class>
+    </servlet>
+<!-- ***************************************************************************-->    
+
+  
+<!-- Declaration affecterCour/changeEnseignantRole/modifierEnseignant/supprimerEnseignant **************************************-->        
+    <servlet>
+        <servlet-name>affecterCour</servlet-name>
+        <servlet-class>Servlet.affecterCour</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>changeEnseignantRole</servlet-name>
+        <servlet-class>Servlet.changeEnseignantRole</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modifierEnseignant</servlet-name>
+        <servlet-class>Servlet.modifierEnseignant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>supprimerEnseignant</servlet-name>
+        <servlet-class>Servlet.supprimerEnseignant</servlet-class>
+    </servlet>
+<!-- ***************************************************************************-->  
+
+
+<!-- Declaration etudiantAffecterCour/changeEtudiantRole/modifierEtudiant/supprimerEtudiants **************************************-->        
+                  
+    <servlet>
+        <servlet-name>etudiantAffecterCour</servlet-name>
+        <servlet-class>Servlet.etudiantAffecterCour</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>changeEtudiantRole</servlet-name>
+        <servlet-class>Servlet.changeEtudiantRole</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modifierEtudiant</servlet-name>
+        <servlet-class>Servlet.modifierEtudiant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>supprimerEtudiant</servlet-name>
+        <servlet-class>Servlet.supprimerEtudiant</servlet-class>
+    </servlet>
+<!-- ***************************************************************************-->  
+
+        
+<!--Mapping Logout ***************************************************************************-->      
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+
+<!-- ***************************************************************************-->  
+
+        
+<!--Mapping MyServlet ***************************************************************************-->                          
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/MyServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/createEn</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/createA</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/creatEt</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/createM</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************-->  
+ 
+ 
+<!--Mapping ModifierAdmin/SupprimerAdmin/AdmineChangeRole **************************-->           
+    <servlet-mapping>
+        <servlet-name>ModifierAdmin</servlet-name>
+        <url-pattern>/ModifierAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SupprimerAdmin</servlet-name>
+        <url-pattern>/SupprimerAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdmineChangeRole</servlet-name>
+        <url-pattern>/AdmineChangeRole</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************-->      
+    
+<!--Mapping affecterCour/changeEnseignantRole/modifierEnseignant/supprimerEnseignant **********************************************-->      
+    <servlet-mapping>
+        <servlet-name>affecterCour</servlet-name>
+        <url-pattern>/affecterCour</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>changeEnseignantRole</servlet-name>
+        <url-pattern>/changeEnseignantRole</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modifierEnseignant</servlet-name>
+        <url-pattern>/modifierEnseignant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>supprimerEnseignant</servlet-name>
+        <url-pattern>/supprimerEnseignant</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************-->  
+
+        
+<!--Mapping etudiantAffecterCour/changeEtudiantRole/modifierEtudiant/supprimerEtudiant *******************************************-->  
+    <servlet-mapping>
+        <servlet-name>etudiantAffecterCour</servlet-name>
+        <url-pattern>/etudiantAffecterCour</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>changeEtudiantRole</servlet-name>
+        <url-pattern>/changeEtudiantRole</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modifierEtudiant</servlet-name>
+        <url-pattern>/modifierEtudiant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>supprimerEtudiant</servlet-name>
+        <url-pattern>/supprimerEtudiant</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************-->  
+
+<!--Mapping modifirModule/supprimerModule ***************************************************************************-->  
+    <servlet-mapping>
+        <servlet-name>modifierModule</servlet-name>
+        <url-pattern>/modifierModule</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>supprimerModule</servlet-name>
+        <url-pattern>/supprimerModule</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************-->    
+
+    
+<!--Mapping  enseignant***************************************************************************-->  
+    <servlet-mapping>
+        <servlet-name>enseignant</servlet-name>
+        <url-pattern>/enseignant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>enseignant</servlet-name>
+        <url-pattern>/creatSeance</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>enseignant</servlet-name>
+        <url-pattern>/listAb</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>enseignant</servlet-name>
+        <url-pattern>/gestAb</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>enseignant</servlet-name>
+        <url-pattern>/module</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************--> 
+
+                          
+<!--Mapping etudiant ***************************************************************************-->  
+    <servlet-mapping>
+        <servlet-name>etudiant</servlet-name>
+        <url-pattern>/etudiant</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************-->
+
+<!--Mapping AffecterAbs ***************************************************************************-->  
+    <servlet-mapping>
+        <servlet-name>AffecterAbs</servlet-name>
+        <url-pattern>/AffecterAbs</url-pattern>
+    </servlet-mapping>
+<!-- ***************************************************************************-->
+<welcome-file-list>
+	<welcome-file>
+            login.jsp
+        </welcome-file>
+    </welcome-file-list>
+
+</web-app>
